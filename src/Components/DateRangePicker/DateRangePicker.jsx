@@ -10,7 +10,7 @@ const DateRangePicker = () => {
     () => {
       updateDateDivClassNames();
 
-      if (startDate && endDate) {
+      if ((startDate && endDate ) && (startDate !== endDate)) {
         console.log(`Start date: ${startDate}, end date: ${endDate}`);
       }
     },
